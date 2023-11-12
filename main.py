@@ -7,7 +7,8 @@
 def run_script():
     # Use a breakpoint in the code line below to debug your script.
     gender = input("Please input the patient's gender. Enter m or f")
-    while gender != "m" or gender != "f":
+    while gender != "m" and gender != "f":
+
         gender = input("That was not a valid input. Please input the patient's gender. Enter m or f")
 
     age = input("Please input the patient's age. Please enter a non-negative number")
@@ -15,13 +16,13 @@ def run_script():
         age = input("That was not a valid input. Please input the patient's age. Please enter a non-negative number")
 
     HBV = input("Is the patient HBeAG+ or HBeAG-. Enter + or -")
-    while HBV != "+" or HBV != "-":
+    while HBV != "+" and HBV != "-":
         HBV = input("That is not an appropraite answer. Is the patient HBeAG+ or HBeAG-. Enter + or -")
     if HBV == "+":
         print("You have entered that the patient is HBeAG+")
 
         ALT = input("Is the patient's ALT score lower than their ULN score: Enter yes or no")
-        while ALT != "yes" or ALT != "no":
+        while ALT != "yes" and ALT != "no":
             ALT = input("Is the patient's ALT score lower than their ULN score: Enter yes or no")
 
         if ALT == 'yes':
@@ -40,7 +41,7 @@ def run_script():
         else:
 
             ULN = input("Is the patient's ALT score greater than twice than their ULN score: Enter yes or no")
-            while ULN != "yes" or ULN!= "no":
+            while ULN != "yes" and ULN!= "no":
                 ULN = input("That is not a valid input. Is the patient's ALT score greater than twice than their ULN score: Enter yes or no")
 
             if ULN == "yes":
